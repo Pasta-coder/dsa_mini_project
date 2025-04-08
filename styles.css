@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 5px;
+    display:flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+#generateButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#generateButton:hover {
+    background-color: #45a049;
+}
+
+#maze {
+    display: grid;
+    grid-gap: 2px;
+    margin: 0 auto;
+    background-color: #6e0864;
+    border: 2px solid #000;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+}
+
+
+.path {
+    background-color: #88fc04;
+}

@@ -1,0 +1,48 @@
+Brute Force Solution: Backtracking Approach
+
+Time and Space Complexity Analysis for Backtracking:
+
+Time Complexity:
+
+Worst case: O(2^(N²)) - In the worst case, we might need to explore every possible path in the maze.
+The rat can make two decisions at each cell (move right or move down), and there are N² cells in total.
+
+Space Complexity:
+
+Solution matrix: O(N²) - To store the solution path
+Recursion stack: O(N²) - In the worst case, the recursion depth could be N² (though typically less)
+Total: O(N²)
+
+
+
+Optimized Solution: Using Breadth-First Search (BFS)
+
+Time Complexity:
+
+Worst case: O(N²) - In the worst case, BFS might visit all cells in the maze once.
+Each cell is enqueued and dequeued at most once, and checking neighboring cells takes constant time.
+
+Space Complexity:
+
+Queue: O(N²) - In the worst case, all cells might be in the queue simultaneously
+Visited array: O(N²) - To track visited cells
+Path storage: O(N²) - To store the path for each cell in the queue
+Total: O(N²)
+
+
+Comparison and Optimizations:
+
+Backtracking vs BFS:
+
+Backtracking (DFS approach) has exponential time complexity in the worst case: O(2^(N²))
+BFS has polynomial time complexity: O(N²)
+BFS guarantees finding the shortest path (if both right and down moves have equal weights)
+Backtracking may find any valid path, not necessarily the shortest
+
+
+Memory Usage:
+
+Backtracking uses less memory as it doesn't need to store all possible paths simultaneously
+BFS requires more memory to store the queue and path information
+
+

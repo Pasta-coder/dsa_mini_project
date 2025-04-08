@@ -1,0 +1,9 @@
+RAT IN A MAZE
+
+-- 1 represents an open path the rat can travel through
+-- 0 represents a blocked path
+-- The rat starts at position (0,0) and needs to reach position (N-1, N-1)
+-- The rat can only move in two directions: forward and down
+
+-- The task is to find if there exists a path from the starting position to the destination, and if so, print one such path.
+
